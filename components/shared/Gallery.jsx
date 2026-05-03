@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function Gallery() {
-  const images = ["/gallery/4.png", "/gallery/2.png", "/gallery/3.png"];
+  const images = ["/galeria/4.png", "/galeria/2.png", "/galeria/3.png"];
 
   return (
     <section className="py-24 bg-black text-white">
