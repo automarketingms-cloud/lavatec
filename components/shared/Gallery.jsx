@@ -18,8 +18,11 @@ export default function Gallery() {
             >
               <Image
                 src={src}
-                alt={`Gallery image ${index + 1}`}
+                alt={`Trabajo realizado ${index + 1}`}
                 fill
+                sizes="(max-width: 640px) 100vw,
+                       (max-width: 768px) 50vw,
+                       33vw"
                 className="object-cover transition duration-500 group-hover:scale-110"
                 priority={index === 0}
               />
