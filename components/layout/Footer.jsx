@@ -25,7 +25,7 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-4">Contacto</h4>
           <ul className="text-gray-400 space-y-2 mb-6">
-            <li>WhatsApp: +56 9 34584106</li>
+            <li>WhatsApp: +569 92226802</li>
             <li>Instagram: @lavatec</li>
           </ul>
         </div>

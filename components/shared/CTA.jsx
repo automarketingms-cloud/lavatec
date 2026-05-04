@@ -13,7 +13,7 @@ export default function CTA() {
         </p>
 
         <a
-          href="https://wa.me/+56934584106"
+          href="https://wa.me/+56992226802"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-(--blue) text-white px-14 py-5 rounded-xl text-lg font-semibold shadow-2xl hover:scale-105 transition"
