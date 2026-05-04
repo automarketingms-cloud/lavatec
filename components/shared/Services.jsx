@@ -5,22 +5,9 @@ export default function Services() {
       desc: "Eliminación de suciedad, grasa, sarro, hongos y malos olores. Ideal para recuperar el rendimiento y la higiene de tu lavadora.",
       price: "$40.000 – $50.000",
     },
-    {
-      title: "Mantención preventiva",
-      desc: "Revisión completa del funcionamiento para prevenir fallas futuras y alargar la vida útil.",
-      price: "Incluido en limpieza",
-    },
-    {
-      title: "Diagnóstico de fallas",
-      desc: "Detección de problemas en bomba, mangueras y funcionamiento general.",
-      price: "$10.000 (gratis con limpieza)",
-    },
-    {
-      title: "Servicio a domicilio",
-      desc: "Atención rápida y confiable directamente en tu hogar.",
-      price: "Sin costo adicional",
-    },
   ];
+
+  const isSingle = services.length === 1;
 
   return (
     <section className="py-24 bg-neutral-900 text-white">
@@ -29,13 +16,18 @@ export default function Services() {
           Nuestros Servicios
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <div
+          className={`grid gap-10 ${
+            isSingle ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2"
+          }`}
+        >
           {services.map((s, i) => (
             <div
               key={i}
-              className="bg-neutral-800 p-8 shadow-xl border-t-4 border-(--blue)
+              className={`bg-neutral-800 p-8 shadow-xl border-t-4 border-(--blue)
               flex flex-col justify-between text-center rounded-xl
-              hover:-translate-y-2 transition-transform duration-300"
+              hover:-translate-y-2 transition-transform duration-300
+              ${isSingle ? "max-w-3xl mx-auto" : ""}`}
             >
               <h3 className="text-xl font-semibold mb-4">{s.title}</h3>
 
